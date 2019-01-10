@@ -1,0 +1,9 @@
+$fontMain: 'Raleway', sans-serif;
+$colorGreen: #19d300;
+$colorRed: #cc0033;
+$colorYellow: #ffcc00;
+
+@mixin borderBottom($borderW, $borderC){
+    border-bottom: $borderW solid $borderC;
+}
+

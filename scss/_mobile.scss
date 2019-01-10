@@ -1,0 +1,417 @@
+@import "mixins";
+
+body {
+    font-family: $fontMain;
+}
+
+img {
+    max-width: 100%;
+    //padding: 10px;
+}
+
+li {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: $colorGreen;
+    text-decoration: none;
+}
+
+nav {
+    text-align: center;
+
+    ul {
+        list-style: none;
+        padding: 20px 10px 20px 10px;
+        font-size: 1.2em;
+        vertical-align: middle;
+
+    }
+}
+
+.flexthis {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+    img {
+        height: 10vh;
+    }
+}
+
+
+//bildspel
+
+.carousel-item img {
+    height: 45vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+.carousel-caption {
+    bottom: 20%;
+    background: rgba(255, 255, 255, .8);
+    padding: 10px;
+
+    h2 {
+
+        color: black;
+        font-size: 1.2em;
+        text-shadow: 0.1px 0.1px 0.1px grey;
+    }
+
+    .juice-name {
+        font-size: 0.7em;
+        text-shadow: 0.1px 0.1px 0.1px grey;
+    }
+
+    p {
+        font-size: 0.7em;
+        margin: 0px;
+    }
+
+    .pris {
+        font-size: 1em;
+    }
+
+
+    h4,
+    p {
+        color: black;
+        text-shadow: 2px 2px 2px white;
+
+    }
+}
+
+
+
+.welcome {
+    text-align: center;
+    margin: 20px 0px;
+
+    h1 {
+        padding-bottom: 15px;
+
+    }
+
+    p {
+        @include borderBottom(1px, black);
+        padding-bottom: 30px;
+    }
+}
+
+
+//buttons
+
+.strawberry,
+.apple,
+.lemon {
+    text-align: center;
+    height: 80%;
+    width: 100vw;
+    margin-bottom: 30px;
+    padding: 20% 0;
+
+
+    a {
+        font-size: 1.5em;
+        color: white;
+        border: 1px solid white;
+        background: rgba(0, 0, 0, .4);
+        border-radius: 10px;
+        padding: 5px 10px;
+
+    }
+}
+
+.strawberry {
+    background-image: url("../images/strawberries2.jpg");
+}
+
+.apple {
+    background-image: url("../images/kiwis.jpg");
+}
+
+.lemon {
+    background-image: url("../images/citrus.jpg");
+}
+
+
+//våra juicer styling
+
+.juice {
+    padding: 40px 0px;
+}
+
+%h2juicestyle {
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    //@include borderBottom(0.5px, black);
+}
+
+%h3juicestyle {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.redjuice {
+    padding-bottom: 30px;
+
+    h2 {
+        @extend %h2juicestyle;
+        @include borderBottom(5px, $colorRed);
+    }
+
+    h3 {
+        @extend %h3juicestyle;
+    }
+
+    p {
+        font-weight: 100;
+        font-size: 1em;
+    }
+}
+
+.greenjuice {
+    padding-bottom: 30px;
+
+    h2 {
+        @extend %h2juicestyle;
+        @include borderBottom(5px, $colorGreen);
+    }
+
+    h3 {
+        @extend %h3juicestyle;
+    }
+
+    p {
+        font-weight: 100;
+        font-size: 1em;
+    }
+}
+
+.yellowjuice {
+    padding-bottom: 30px;
+
+    h2 {
+        @extend %h2juicestyle;
+        @include borderBottom(5px, $colorYellow);
+    }
+
+    h3 {
+        @extend %h3juicestyle;
+    }
+
+    p {
+        font-weight: 100;
+        font-size: 1em;
+    }
+}
+
+/*OM OSS*/
+
+.om-oss {
+    margin: 0px 10px 0px 10px;
+
+    
+}
+
+.om-oss-img {
+        width: 100%;
+        max-height: 400px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    padding-top: 20px;
+    }
+
+
+.text {
+    text-align: center;
+    line-height: 30px;
+
+
+    .om-oss-text {
+        @include borderBottom(1px, black);
+
+        h2 {
+            color: black;
+
+        }
+
+        p {
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+    }
+
+}
+
+
+.aside {
+    margin: 50px 10px 0px 10px;
+
+
+    .card {
+        border: none;
+
+        i {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card-block {
+            font-family: $fontMain;
+            line-height: 1.8em;
+            padding-bottom: 20px;
+        }
+
+        .card-title {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .icon-green {
+            color: $colorGreen;
+        }
+
+        .icon-red {
+            color: $colorRed;
+        }
+
+        .icon-yellow {
+            color: $colorYellow;
+        }
+
+    }
+}
+
+
+/*Butiker*/
+
+.background {
+    background-image: url("../images/coffee-shop-1209863_1920.jpg");
+    background-position: center;
+    overflow: hidden;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 15em;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.transparent {
+    background-color: white;
+    background: rgba(255, 255, 255, .7);
+    max-width: 50%;
+    text-align: center;
+
+    p {
+        font-size: 0.8em;
+        font-weight: 500;
+
+    }
+
+    h1 {
+        @include borderBottom(1px, black);
+        padding: 10px 0 10px 0;
+        font-size: 1.5em;
+    }
+}
+
+.map {
+    text-align: center;
+    margin-top: 2em;
+
+    h2 {
+        color: $colorRed;
+        font-size: 2em;
+        padding-top: 1em;
+        ;
+    }
+
+    p {
+        padding-bottom: 3em;
+    }
+}
+
+.mapouter {
+    text-align: right;
+}
+
+.gmap_canvas {
+    width: 100%;
+    overflow: hidden;
+    background: none !important;
+    height: 40vh;
+    padding-top: 20px;
+
+    iframe {
+        height: 100%;
+        border-width: 0px;
+    }
+}
+
+
+//instagram code
+
+.hashtag {
+    text-align: center;
+
+    h3 {
+        font-family: $fontMain;
+        font-weight: 400;
+        font-size: 1.6em;
+        padding: 20px 0px 10px 0px;
+        margin: 30px auto 0px auto;
+        border-top: 1px solid black;
+    }
+}
+
+.scaled_md,
+.scaled_lg {
+    display: none;
+}
+
+.instaImages {
+    padding: 0px 0px;
+    transition-property: transform;
+
+    img {
+        max-width: 80px;
+        height: 80px;
+        object-fit: cover;
+        overflow: hidden;
+        padding: 5px;
+    }
+}
+
+
+//footer
+
+footer {
+    background-color: dimgrey;
+    padding-left: 10px;
+    text-align: center;
+
+    i {
+        color: white;
+        font-size: 7vw;
+        padding: 20px 5px;
+    }
+
+    p {
+        color: white;
+        font-size: 0.7em;
+        padding-top: 1.2em;
+    }
+}

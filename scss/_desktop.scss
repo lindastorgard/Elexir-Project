@@ -1,0 +1,93 @@
+nav{
+    ul{
+        //padding-top: 80px;
+    }
+}
+
+
+//bildspel
+.carousel-caption {
+    bottom: 30%;
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px 0px;
+
+    h2 {
+
+        font-size: 3em;
+    }
+}
+
+.carousel-item img {
+    height: 65vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.welcome{
+    max-width: 90%;
+}
+
+
+/*OM OSS*/
+
+.aside{
+    border-top: 1px solid black;
+    padding: 40px 0;
+}
+
+.om-oss-img {
+    margin-top: 70px;
+}
+
+
+.text {
+    .om-oss-text {
+        border-bottom: none;
+        margin-top: 70px;
+    }
+
+}
+
+.background{
+    height: 60vh;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.map{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.gmap_canvas {
+    height: 50vh;
+    
+    iframe{
+        width: 100%;
+    }
+}
+
+
+//instagram gallery
+
+.instaImages {
+    padding-bottom: 50px;
+}
+
+.scaled_lg {
+    display: block;
+}
+
+.scaled_lg:hover {
+    transform: scale(1.9);
+}
+
+
+//footer
+footer {
+    p {
+        padding-top: 1.8em;
+        font-size: 0.9em;
+    }
+}

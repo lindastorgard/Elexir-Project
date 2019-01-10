@@ -1,0 +1,15 @@
+@import "mobile";
+
+@media (min-width: 576px) { 
+}
+
+@media (min-width: 768px) {
+    @import "tablet";
+}
+
+@media (min-width: 992px) {
+    @import "desktop";
+}
+
+@media (min-width: 1200px) {
+}
