@@ -1,5 +1,7 @@
 HTML & CSS
 
+Wiew the site at https://lindastorgard.github.io/Elexir-Project/
+
 This is my first project in HTML and CSS. A fully responsive webpage created together with Fanny Schriwer and Madeleine Brodd, two of my fellow students during our first course (HTML and CSS) at the Front End Development Program at Medieinstitutet, Stockholm.
 
 Requirements:
